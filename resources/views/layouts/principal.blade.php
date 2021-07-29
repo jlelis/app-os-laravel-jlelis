@@ -31,6 +31,15 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#"><i class="material-icons left">miscellaneous_services</i>Ordem de Serviço</a></li>
                 <li><a href="#"><i class="material-icons left">highlight</i>Encerrar OS</a></li>
+                @guest
+                <li><a href="{{ route('login') }}"><i class="material-icons left">lock</i>Login</a></li>
+                @else
+                <li><a href="#" onclick="event.preventDefault();
+                    document.querySelector('form.logout').submit(); "><i class="material-icons left">logout</i>Logout</a></li>
+                <form action="{{route('logout')}}" class="logout" method="POST" style="display:none;">
+                    @csrf
+                </form>
+                @endguest
               </ul>
             </div>
           </nav>
@@ -42,5 +51,8 @@
     <footer>
 
     </footer>
+    <script>
+         M.AutoInit();
+    </script>
 </body>
 </html>
