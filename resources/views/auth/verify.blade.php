@@ -1,9 +1,10 @@
-@extends('layouts.principal')
+@extends('layouts.app')
 
 @section('title', $title = __('Verify Your Email Address'))
 
-@section('conteudo')
+@section('content')
 <div class="row">
+    <br>
     <div class="col s12 m10 l8 offset-m1 offset-l2">
         <div class="card">
             <div class="card-content">

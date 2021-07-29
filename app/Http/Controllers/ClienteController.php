@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cliente;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class UserController extends Controller
+class ClienteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //
     }
 
     /**
@@ -41,10 +41,10 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Cliente $cliente)
     {
         //
     }
@@ -52,10 +52,10 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Cliente $cliente)
     {
         //
     }
@@ -64,10 +64,10 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Cliente $cliente)
     {
         //
     }
@@ -75,16 +75,11 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Cliente $cliente)
     {
         //
-    }
-    public function logout(Request $request)
-    {
-        Auth::logout();
-        return view('login');
     }
 }

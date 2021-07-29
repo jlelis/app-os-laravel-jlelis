@@ -1,10 +1,11 @@
-@extends('layouts.principal')
+@extends('layouts.app')
 
 @section('title', $title = __('Register'))
 
-@section('conteudo')
+@section('content')
 <div class="row">
-    <div class="col s12 m10 l8 offset-m1 offset-l2">
+
+    <div class="col s12 m6 l4 offset-m1 offset-l4">
         <div class="card">
             <div class="card-content">
                 <div class="card-title">{{ $title }}</div>
@@ -22,7 +23,7 @@
                     </div>
 
                     <div class="input-field col s12 @error('email') has-error @enderror">
-                        <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input id="email" type="email" class="validate" name="email" value="{{ old('email') }}" required autocomplete="email">
                         <label for="email">{{ __('E-Mail Address') }}</label>
                         @error('email')
                             <div class="col s12">

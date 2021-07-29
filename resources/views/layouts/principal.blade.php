@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <div class="container-fluid">
+    {{-- <div class="container-fluid">
         <nav>
             <div class="nav-wrapper   orange darken-2">
               <a href="#" class="brand-logo center disabled">Logo</a>
@@ -43,7 +43,7 @@
               </ul>
             </div>
           </nav>
-
+    </div> --}}
     <section>
         @yield('conteudo')
     </section>
