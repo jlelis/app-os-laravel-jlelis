@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Finalizacao;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
-class FinalizacaoController extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class FinalizacaoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Finalizacao  $finalizacao
+     * @param  \App\Models\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function show(Finalizacao $finalizacao)
+    public function show(Customer $customer)
     {
         //
     }
@@ -52,10 +52,10 @@ class FinalizacaoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Finalizacao  $finalizacao
+     * @param  \App\Models\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function edit(Finalizacao $finalizacao)
+    public function edit(Customer $customer)
     {
         //
     }
@@ -64,10 +64,10 @@ class FinalizacaoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Finalizacao  $finalizacao
+     * @param  \App\Models\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Finalizacao $finalizacao)
+    public function update(Request $request, Customer $customer)
     {
         //
     }
@@ -75,10 +75,10 @@ class FinalizacaoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Finalizacao  $finalizacao
+     * @param  \App\Models\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Finalizacao $finalizacao)
+    public function destroy(Customer $customer)
     {
         //
     }

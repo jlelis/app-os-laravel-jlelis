@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\OrdemServico;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
-class OrdemServicoController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class OrdemServicoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\OrdemServico  $ordemServico
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function show(OrdemServico $ordemServico)
+    public function show(Contact $contact)
     {
         //
     }
@@ -52,10 +52,10 @@ class OrdemServicoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\OrdemServico  $ordemServico
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function edit(OrdemServico $ordemServico)
+    public function edit(Contact $contact)
     {
         //
     }
@@ -64,10 +64,10 @@ class OrdemServicoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\OrdemServico  $ordemServico
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, OrdemServico $ordemServico)
+    public function update(Request $request, Contact $contact)
     {
         //
     }
@@ -75,10 +75,10 @@ class OrdemServicoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\OrdemServico  $ordemServico
+     * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OrdemServico $ordemServico)
+    public function destroy(Contact $contact)
     {
         //
     }

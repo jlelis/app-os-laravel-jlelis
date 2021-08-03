@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Tecnico;
+use App\Models\Registry;
 use Illuminate\Http\Request;
 
-class TecnicoController extends Controller
+class RegistryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class TecnicoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Tecnico  $tecnico
+     * @param  \App\Models\Registry  $registry
      * @return \Illuminate\Http\Response
      */
-    public function show(Tecnico $tecnico)
+    public function show(Registry $registry)
     {
         //
     }
@@ -52,10 +52,10 @@ class TecnicoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Tecnico  $tecnico
+     * @param  \App\Models\Registry  $registry
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tecnico $tecnico)
+    public function edit(Registry $registry)
     {
         //
     }
@@ -64,10 +64,10 @@ class TecnicoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Tecnico  $tecnico
+     * @param  \App\Models\Registry  $registry
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tecnico $tecnico)
+    public function update(Request $request, Registry $registry)
     {
         //
     }
@@ -75,10 +75,10 @@ class TecnicoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Tecnico  $tecnico
+     * @param  \App\Models\Registry  $registry
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tecnico $tecnico)
+    public function destroy(Registry $registry)
     {
         //
     }

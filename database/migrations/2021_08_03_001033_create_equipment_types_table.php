@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFinalizacaosTable extends Migration
+class CreateEquipmentTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateFinalizacaosTable extends Migration
      */
     public function up()
     {
-        Schema::create('finalizacaos', function (Blueprint $table) {
+        Schema::create('equipment_types', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateFinalizacaosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('finalizacaos');
+        Schema::dropIfExists('equipment_types');
     }
 }

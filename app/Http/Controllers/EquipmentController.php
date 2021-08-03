@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Servico;
+use App\Models\Equipment;
 use Illuminate\Http\Request;
 
-class ServicoController extends Controller
+class EquipmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ServicoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Servico  $servico
+     * @param  \App\Models\Equipment  $equipment
      * @return \Illuminate\Http\Response
      */
-    public function show(Servico $servico)
+    public function show(Equipment $equipment)
     {
         //
     }
@@ -52,10 +52,10 @@ class ServicoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Servico  $servico
+     * @param  \App\Models\Equipment  $equipment
      * @return \Illuminate\Http\Response
      */
-    public function edit(Servico $servico)
+    public function edit(Equipment $equipment)
     {
         //
     }
@@ -64,10 +64,10 @@ class ServicoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Servico  $servico
+     * @param  \App\Models\Equipment  $equipment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Servico $servico)
+    public function update(Request $request, Equipment $equipment)
     {
         //
     }
@@ -75,10 +75,10 @@ class ServicoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Servico  $servico
+     * @param  \App\Models\Equipment  $equipment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Servico $servico)
+    public function destroy(Equipment $equipment)
     {
         //
     }
